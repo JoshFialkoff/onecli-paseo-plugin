@@ -1,0 +1,9 @@
+{
+  "id": "onecli",
+  "name": "OneCLI",
+  "description": "Route Paseo agents through a OneCLI gateway that injects credentials without exposing them, and connect services with OAuth 2.",
+  "requirements": {
+    "paseo": ">=0.15.1"
+  },
+  "build": [["npm", "ci", "--omit=dev", "--ignore-scripts"]]
+}

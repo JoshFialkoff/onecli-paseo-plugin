@@ -1,0 +1,8 @@
+OneCLI Paseo Plugin
+Copyright 2026 OneCLI Paseo Plugin contributors
+
+This product includes software developed as part of the paseo-plugins project
+(https://github.com/yuruiz/paseo-plugins), licensed under the Apache License,
+Version 2.0. The sealed-submission cryptography in shared/sealing.ts and the
+agent environment helpers in server/agent-configuration.ts are derived from
+the Secrets plugin in that repository.

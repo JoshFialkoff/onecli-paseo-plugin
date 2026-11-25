@@ -1,0 +1,58 @@
+{
+  "name": "onecli-paseo-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Route Paseo agents through a OneCLI gateway with credential injection, and connect services with OAuth 2.",
+  "homepage": "https://github.com/JoshFialkoff/onecli-paseo-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/JoshFialkoff/onecli-paseo-plugin/issues"
+  },
+  "license": "Apache-2.0",
+  "author": "OneCLI Paseo Plugin contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshFialkoff/onecli-paseo-plugin.git"
+  },
+  "files": [
+    "paseo-plugin.json",
+    "OVERVIEW.md",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "index.client.tsx",
+    "index.server.ts",
+    "client/",
+    "server/",
+    "shared/"
+  ],
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run --bail=1",
+    "lint": "oxlint",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check ."
+  },
+  "dependencies": {
+    "@noble/ciphers": "2.4.0",
+    "@noble/curves": "2.4.0",
+    "@noble/hashes": "2.2.0",
+    "@scure/base": "2.2.0",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@getpaseo/plugin": "0.15.1",
+    "@tanstack/react-query": "^5.0.0",
+    "@types/node": "^20.9.0",
+    "@types/react": "^19.1.0",
+    "oxfmt": "0.46.0",
+    "oxlint": "1.61.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "typescript": "^5.9.3",
+    "vitest": "4.1.7"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
